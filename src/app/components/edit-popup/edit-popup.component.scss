@@ -1,15 +1,15 @@
 .form-wrapper {
-    .row {
-      span {
-        flex: 1;
-      }
-  
-      input {
-        flex: 3;
-      }
+  .row {
+    span {
+      flex: 1;
     }
-  
-    .rating {
-      margin-top: 0.5rem;
+
+    input {
+      flex: 3;
     }
   }
+
+  .rating {
+    margin-top: 0.5rem;
+  }
+}
