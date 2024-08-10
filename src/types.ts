@@ -4,7 +4,7 @@ export interface options{
     headers?: HttpHeaders | {
         [header: string]: string | string[];
     };
-    observe: 'body';
+    observe?: 'body';
     context?: HttpContext;
     params?: HttpParams | {
         [param: string]: string | number | boolean | ReadonlyArray<string | number | boolean>;
@@ -15,4 +15,26 @@ export interface options{
     transferCache?: {
         includeHeaders?: string[];
     } | boolean;
+}
+
+export interface Products{
+   items:Product[];
+   total:number;
+   page:number;
+   perPage:number;
+   totalPages:number
+
+}
+
+export interface Product{
+    price:string;
+    name:string;
+    image:string;
+    rating:number;
+}
+
+export interface PaginationParams{
+    [param:string]:string | number | boolean |ReadonlyArray<string| number|boolean>;
+    page:number;
+    perPage : number;
 }
